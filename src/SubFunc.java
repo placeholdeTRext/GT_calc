@@ -3,33 +3,11 @@
  */
 public class SubFunc {
 
-//working with Playground, needs to be removed at a later date
-    public static void pureNE(Integer[][][] arr2D2P) {
-        boolean up;
-        up = (arr2D2P[0][0][0]>arr2D2P[1][0][0] && arr2D2P[0][1][0]>arr2D2P[1][1][0]) ? true : false;
-        System.out.print("up   " + up + "\t\t");
-        boolean dn;
-        dn = (arr2D2P[0][0][0]<arr2D2P[1][0][0] && arr2D2P[0][1][0]<arr2D2P[1][1][0]) ? true : false;
-        System.out.println("down  " +dn);
-        boolean lf;
-        lf = (arr2D2P[0][0][1]>arr2D2P[0][1][1] && arr2D2P[1][0][1]>arr2D2P[1][1][1]) ? true : false;
-        System.out.print("left "+ lf+"\t\t");
-        boolean rt;
-        rt = (arr2D2P[0][0][1]<arr2D2P[0][1][1] && arr2D2P[1][0][1]<arr2D2P[1][1][1]) ? true : false;
-        System.out.println("right "+ rt);
-    }
+//values to call upon
+    public static byte neon=2;
+    public static byte soak=2;
 
 //for the purpose of interim output and checks
-    public static void asIntegerMatrix3(Integer[][][] arr2D2P) {
-        for (byte row = 0; row < arr2D2P.length; row++) {
-            for (byte col = 0; col < arr2D2P[row].length; col++) {
-                System.out.print(arr2D2P[row][col][0] + "," + arr2D2P[row][col][1] + "\t\t");
-            }
-            System.out.println();
-        }
-        System.out.println();
-    }
-
     public static void asBooleanMatrix2(boolean[][] arr2D) {
         for (byte row = 0; row < arr2D.length; row++) {
             for (byte col = 0; col < arr2D[row].length; col++) {
